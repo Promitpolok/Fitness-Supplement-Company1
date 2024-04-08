@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="593.0" prefWidth="745.0" style="-fx-background-color: magenta;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.Login_InterfaceController">
+   <children>
+      <Rectangle fx:id="userTypeComboBox" arcHeight="5.0" arcWidth="5.0" fill="#0598ff" height="593.0" layoutX="280.0" stroke="BLACK" strokeType="INSIDE" width="465.0" />
+      <ImageView fitHeight="309.0" fitWidth="280.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/OOP/FiTness%20supplement%20(1).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="355.0" layoutY="133.0" text="Select User">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="userNameComboBox" layoutX="450.0" layoutY="128.0" prefHeight="31.0" prefWidth="187.0" promptText="User Name" />
+      <Label layoutX="355.0" layoutY="193.0" text="User ID">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="355.0" layoutY="256.0" text="Password">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userIdTextField" layoutX="450.0" layoutY="188.0" promptText="Enter Your ID" />
+      <PasswordField fx:id="enterPasswordField" layoutX="450.0" layoutY="251.0" promptText="Enter Your Password" />
+      <Label fx:id="resetPassLabel" layoutX="539.0" layoutY="292.0" text="Forget Your Password?">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Button layoutX="493.0" layoutY="338.0" mnemonicParsing="false" onAction="#loginButtonOnMouseClick" prefHeight="31.0" prefWidth="91.0" style="-fx-background-color: magenta;" text="Login">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="437.0" layoutY="544.0" text="Need an Account?" />
+      <Button layoutX="549.0" layoutY="538.0" mnemonicParsing="false" onAction="#registerButtonOnMouseClick" style="-fx-background-color: transparent;" text="Register">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
