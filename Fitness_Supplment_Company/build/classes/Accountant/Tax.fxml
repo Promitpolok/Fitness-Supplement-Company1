@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Accountant.TaxController">
+   <children>
+      <Button layoutX="45.0" layoutY="44.0" mnemonicParsing="false" onAction="#backMouseOnClick" prefHeight="31.0" prefWidth="67.0" text="Back" />
+      <Button layoutX="224.0" layoutY="178.0" mnemonicParsing="false" onAction="#createTaxMouseOnClick" prefHeight="31.0" prefWidth="145.0" text="Create Tax" />
+      <Button layoutX="224.0" layoutY="237.0" mnemonicParsing="false" onAction="#viewTaxBerChatMouseOnClick" prefHeight="31.0" prefWidth="145.0" text="View Tax Ber Chat" />
+      <Label layoutX="268.0" layoutY="93.0" prefHeight="49.0" prefWidth="58.0" text="Tax">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

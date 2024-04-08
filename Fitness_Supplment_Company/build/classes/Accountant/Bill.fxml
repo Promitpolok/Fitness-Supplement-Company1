@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="447.0" prefWidth="600.0" style="-fx-background-color: skyBlue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Accountant.BillController">
+   <children>
+      <Label layoutX="265.0" layoutY="110.0" prefHeight="44.0" prefWidth="71.0" text="BILL">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="36.0" layoutY="66.0" mnemonicParsing="false" onAction="#backMouseOnClick" prefHeight="31.0" prefWidth="65.0" text="Back" />
+      <Button layoutX="215.0" layoutY="276.0" mnemonicParsing="false" onAction="#editBillMouseOnClick" prefHeight="31.0" prefWidth="155.0" text="Edit Bill" />
+      <Button layoutX="215.0" layoutY="227.0" mnemonicParsing="false" onAction="#viewBillMouseOnClick" prefHeight="31.0" prefWidth="155.0" text="View Bill" />
+      <Button layoutX="215.0" layoutY="176.0" mnemonicParsing="false" onAction="#createBillMouseOnClick" prefHeight="31.0" prefWidth="155.0" text="Create Bill" />
+   </children>
+</AnchorPane>
