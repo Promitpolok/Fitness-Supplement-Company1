@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: skyblue;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+   <children>
+      <Button layoutX="30.0" layoutY="297.0" mnemonicParsing="false" text="Add and Update to Form" />
+      <ComboBox layoutX="41.0" layoutY="52.0" prefWidth="150.0" promptText="membership type" />
+      <ComboBox layoutX="116.0" layoutY="150.0" prefHeight="25.0" prefWidth="194.0" promptText="radioButton/textField" />
+      <Text layoutX="43.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Label on it :" />
+      <TextField layoutX="116.0" layoutY="188.0" />
+      <Text layoutX="41.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add" />
+      <Text layoutX="164.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Membership">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

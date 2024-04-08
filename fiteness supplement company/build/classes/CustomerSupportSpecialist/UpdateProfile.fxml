@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="177.0" layoutY="76.0" prefHeight="36.0" prefWidth="221.0" style="-fx-background-color: white;" text="Name:" />
+      <Label layoutX="177.0" layoutY="120.0" prefHeight="43.0" prefWidth="221.0" style="-fx-background-color: white;" text="ID:" />
+      <Label layoutX="177.0" layoutY="174.0" prefHeight="36.0" prefWidth="221.0" style="-fx-background-color: white;" text="Address:" />
+      <Button layoutX="247.0" layoutY="313.0" mnemonicParsing="false" text="Save" />
+      <Button layoutX="420.0" layoutY="179.0" mnemonicParsing="false" text="Change" />
+      <Text layoutX="237.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Label layoutX="14.0" layoutY="76.0" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: white;" text="Date Joined:" />
+      <Label layoutX="14.0" layoutY="124.0" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: white;" text="Salary:" />
+      <Button layoutX="14.0" layoutY="179.0" mnemonicParsing="false" text="Take Leave" />
+   </children>
+</AnchorPane>
