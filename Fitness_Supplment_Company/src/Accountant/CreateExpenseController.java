@@ -6,6 +6,7 @@ package Accountant;
 
 import java.io.IOException;
 import java.net.URL;
+//import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -20,7 +21,9 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
+//import static javax.management.Query.value;
 
 /**
  * FXML Controller class
@@ -36,15 +39,16 @@ public class CreateExpenseController implements Initializable {
     @FXML
     private DatePicker datePicker;
     @FXML
-    private TableView<?> tableView;
+    private TableView<ExpenseReason> tableView;
     @FXML
-    private TableColumn<?, ?> spendReasonTableColumn;
+    private TableColumn<ExpenseReason, String> spendReasonTableColumn;
     @FXML
-    private TableColumn<?, ?> amountTableColumn;
+    private TableColumn<ExpenseReason, String> amountTableColumn;
     @FXML
-    private TableColumn<?, ?> dateTableColumn; 
+    private TableColumn<ExpenseReason, String> dateTableColumn; 
     
     private ArrayList <ExpenseReason> expensesReasonList;
+    
 
     /**
      * Initializes the controller class.
@@ -68,7 +72,13 @@ public class CreateExpenseController implements Initializable {
                        "Customer Support",
                        "Market Research",
                        "Product Liability Insurance"
-                );
+                ); 
+                
+                spendReasonTableColumn.setCellValueFactory(new PropertyValueFactory<ExpenseReason, String>("spendReason"));
+                amountTableColumn.setCellValueFactory(new PropertyValueFactory<ExpenseReason, String>("amount"));
+                dateTableColumn.setCellValueFactory(new PropertyValueFactory<ExpenseReason, String>("date"));
+                
+                
                 
         // TODO
     }    
@@ -89,13 +99,32 @@ myStage.show();
     }
 
     @FXML
-    private void addButtonMouseOnClick(ActionEvent event) {
+    private void addButtonMouseOnClick(ActionEvent event) { 
+        Integer LocalDate = null;
+        expensesReasonList.add(
+                  new ExpenseReason(
+                  spendReasonComboBox.getValue(),
+                  Float.parseFloat(amountTextField.getText()),
+                  LocalDate
+        //datePicker.getValue()
+                                                          
+                )
+        
+        );
+
     }
 
-    private static class ExpenseReason {
-
-        public ExpenseReason() {
+    @FXML
+    private void showExpenseButtonMouseOnClick(ActionEvent event) { 
+        for(ExpenseReason s: expensesReasonList){
+            tableView.getItems().add(s);
+            
+        
         }
+        
+        
     }
+
+
     
 }
