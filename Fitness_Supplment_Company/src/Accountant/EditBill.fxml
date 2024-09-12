@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="465.0" prefWidth="620.0" style="-fx-background-color: #0598ff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Accountant.EditBillController">
+   <children>
+      <Label layoutX="250.0" layoutY="33.0" prefHeight="35.0" prefWidth="106.0" text="Edit Bill">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="32.0" layoutY="35.0" mnemonicParsing="false" onAction="#backButtonMouseOnClick" prefHeight="35.0" prefWidth="78.0" text="Back" />
+      <ComboBox fx:id="buyerIdComboBox" layoutX="32.0" layoutY="136.0" prefHeight="31.0" prefWidth="138.0" promptText="Buyer ID" />
+      <TextArea fx:id="showBillTextArea" layoutX="32.0" layoutY="222.0" prefHeight="200.0" prefWidth="542.0" />
+      <Button layoutX="241.0" layoutY="136.0" mnemonicParsing="false" onAction="#deleteBillButtonMouseOnClick" prefHeight="31.0" prefWidth="138.0" text="Delete Bill" />
+      <Button layoutX="440.0" layoutY="136.0" mnemonicParsing="false" onAction="#createNewBillMouseOnClick" prefHeight="31.0" prefWidth="138.0" text="Create New Bill" />
+      <Label layoutX="32.0" layoutY="188.0" prefHeight="27.0" prefWidth="34.0" text="Bill">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
